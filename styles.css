@@ -131,5 +131,29 @@ section {
 	margin-top: 1.5rem;
 }
 
+.memberImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
 
+.memberCard {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 
