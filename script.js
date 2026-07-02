@@ -1,33 +1,20 @@
-// Get the button element
-const button = document.getElementById('myButton');
+// A simple function to check if an element is in view
+function checkElementsInView(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom > 0;
+}
 
-// Add click event listener
-button.addEventListener('click', function() {
-    console.log('Button clicked!');
-    
-    // Toggle the active class
-    button.classList.toggle('active');
-    
-    // Show an alert
-    alert('Button was clicked!');
-});
-
-// Optional: Add smooth scrolling to navigation links
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+// Makes the scrolling smooth and only fades in when the user sees it
+const fadeItems = document.querySelectorAll(".fade-in");
+function updateFadeItems() {
+    fadeItems.forEach(item => {
+        if (checkElementsInView(item)) {
+            item.classList.add("visible");
         }
     });
-});
+}
 
-// Log page load
-window.addEventListener('load', function() {
-    console.log('Page loaded successfully!');
-});
+window.addEventListener("scroll", updateFadeItems);
+window.addEventListener("resize", updateFadeItems);
+
+updateFadeItems();

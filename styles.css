@@ -47,7 +47,7 @@ nav a:hover {
 
 
 nav {
-	background: #444444;
+	background: #1b1a1a;
 	color: #fff;
     position: sticky;
 	top: 0;
@@ -132,21 +132,24 @@ section {
 }
 
 .memberImage {
-    width: 150px;
+    width: 220px;
     height: 150px;
-    border-radius: 10%;
+    border-radius: 12%;
+    border: 1px solid #000000;
     object-fit: cover;
     margin-bottom: 1rem;
 }
 
 .memberCard {
-    background-color: #fff;
+    background-color: #f0ff81;
     padding: 2rem;
-    margin: 2rem auto;
+    margin-top: 1rem;
+    margin-right: 4rem;
     border-radius: 10px;
+    border: 1px solid #000000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 400px;
+    max-width: 360px;
 }
 
 .members {
@@ -157,3 +160,40 @@ section {
     padding-right: 2rem;
 }
 
+.funFact {
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+#membersBody {
+    background-color: #8cddf2;
+}
+
+#membersHeader {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.75rem;
+    color: #1b1a1a;
+    text-decoration: underline;
+}
+
+.fade-in {
+	opacity: 0;
+	transform: translateY(10px);
+}
+
+.fade-in.visible {
+	animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
