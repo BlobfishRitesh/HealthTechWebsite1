@@ -166,16 +166,26 @@ section {
 }
 
 #membersBody {
-    background-color: #8cddf2;
+    background-color: #a6edff;
 }
 
+#homeBody {
+    background-color: #a6edff;
+}
+
+
 #membersHeader {
+    background-image: url(Images/membersBackground.png);
+    background-size: contain;
+    background-position: center;
+    color: #fff;
     text-align: center;
-    margin-top: 2rem;
+    padding: 5rem 2rem;
+    border-bottom: 5px solid #266c9b;
+    border-top: 5px solid #143b55;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    font-size: 2.5rem;
     margin-bottom: 2rem;
-    font-size: 2.75rem;
-    color: #1b1a1a;
-    text-decoration: underline;
 }
 
 .fade-in {
