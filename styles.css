@@ -160,6 +160,14 @@ section {
     padding-right: 2rem;
 }
 
+.goalsCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .funFact {
     margin-top: 1rem;
     font-style: italic;
@@ -173,6 +181,22 @@ section {
     background-color: #a6edff;
 }
 
+.homeP {
+    margin-bottom: 1rem;
+}
+
+.homeImage {
+    width: 290px;
+    height: 280px;
+    border-radius: 12%;
+    border: 1px dashed #000000;
+    object-fit: cover;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
 
 #membersHeader {
     background-image: url(Images/membersBackground.png);
@@ -186,6 +210,42 @@ section {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
     font-size: 2.5rem;
     margin-bottom: 2rem;
+}
+
+#invCard {
+    background-color: #ffdbdb;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 270px;
+}
+
+#colCard {
+    background-color: #ddffdb;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 270px;
+}
+
+#impCard {
+    background-color: #dbf0ff;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 270px;
 }
 
 .fade-in {
