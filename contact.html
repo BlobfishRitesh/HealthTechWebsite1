@@ -6,7 +6,7 @@
 	<title>Contact</title>
 	<link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body id="contactBody">
 	<div>
 		<nav>
 			<ul>
@@ -19,6 +19,30 @@
 		</nav>
 
 	</div>
+	<section class="contact-section fade-in">
+		<h1>Contact Us</h1>
+		<p>
+			Have questions about HealthTech, our projects, or joining the club?
+			Send us a message below.
+		</p>
+
+		<form id="contactForm" action="https://formspree.io/f/xrenvzqd" method="POST" class="contact-form" autocomplete="off">
+			<input type="text" name="name" placeholder="Your Name" required>
+
+			<input type="email" name="email" placeholder="Your Email" required>
+
+			<textarea name="message" placeholder="Your Message" required></textarea>
+
+			<button type="submit">Send Message</button>
+		</form>
+	</section>
+	<section class="contact-footer">
+		<h2 class = "subheading">You can also reach us at:</h2>
+		<p>
+			Email: cvillehealthtech@gmail.com 
+			<br>
+			Instagram: @hlthtech
+		</p>
     <script src="script.js"></script>
 </body>
 </html>
