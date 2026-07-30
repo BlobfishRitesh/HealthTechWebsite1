@@ -327,6 +327,8 @@ border-radius: 22px;
 text-align: center;
 box-shadow: 0 12px 35px rgba(0, 0, 0, 0.14);
 } 
+
+
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -336,4 +338,51 @@ box-shadow: 0 12px 35px rgba(0, 0, 0, 0.14);
 		opacity: 1;
 		transform: translateY(0px);
 	}
+}
+
+/* Makes it look better on mobile devices */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: 0;
+  }
+
+  nav {
+    padding: 0.75rem;
+  }
+
+  #home-header,
+  #membersHeader {
+    padding: 2.5rem 1rem;
+    font-size: 1.8rem;
+  }
+
+  .members,
+  .goalsCards {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .memberCard,
+  .card,
+  .contact-section,
+  .contact-footer {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    padding: 1rem;
+  }
+
+  .homeImage,
+  .memberImage {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
 }
